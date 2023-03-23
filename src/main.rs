@@ -28,7 +28,6 @@ async fn run() {
             .await
             .unwrap()
             .into_iter()
-            .skip(1)
             .map(|question| question.question_id)
             .collect();
     let mut synced_messages = std::collections::HashMap::new();
